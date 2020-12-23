@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import PrimeraApp from './PrimeraApp';
-import CounterApp from './CounterApp';
-
+import GifExpertApp from './GifExpertApp';
 import './index.css';
 
-
-const divRoot = document.querySelector('#app');
-
-// ReactDOM.render(<PrimeraApp saludo={'Ola tudo bem...'} />, divRoot);
-ReactDOM.render( <CounterApp value={ 10 } />  , divRoot );
+ReactDOM.render(
+  <React.StrictMode>
+    <GifExpertApp />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
