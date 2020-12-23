@@ -1,14 +1,20 @@
-# CounterApp
+# TDD
 
-Esta es nuestra primera aplicación de React. Recuerden que si desean ejecutar esta aplicación, deben de reconstruir los módulos de node así:
+Testes unitarios com arquivos externos que contém funções, arrays e objetos a serem testados.
 
 ```
-npm install
+yarn  install
 ```
 
 Y luego pueden correrlo así
 
 ```
-npm start
+yarn start
+```
+
+TDD
+
+```
+yarn test
 ```
 
