@@ -15,4 +15,19 @@ describe('PrimeiraApp', () => {
 
     expect(wrapper).toMatchSnapshot();
   });
+
+  
+  it('should show subtitulo send for props', () => {
+    const title = 'ola mundo';
+    const subtTitle = 'Ola Brasil';
+    const wrapper = shallow(
+      <PrimeraApp saludo={'ola mundo'} subtitulo={subtTitle} />
+    );
+
+    const txtInParagraph = wrapper.find('p').text().trim();
+
+    expect(subtTitle).toBe(txtInParagraph);
+  });
+
+
 });

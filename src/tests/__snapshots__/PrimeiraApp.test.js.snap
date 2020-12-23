@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`PrimeiraApp should show subtitulo send for props 1`] = `
+<Fragment>
+  <h1>
+     
+    ola mundo
+     
+  </h1>
+  <p>
+     
+    Ola Brasil
+     
+  </p>
+</Fragment>
+`;
+
 exports[`PrimeiraApp should show the message "ola mundo 1`] = `
 <Fragment>
   <h1>
