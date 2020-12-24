@@ -1,7 +1,7 @@
 import React from 'react';
 const GifGridItem = ({ img }) => {
   return (
-    <div>
+    <div className="card">
       <img src={img.url} alt={img.alt} />
     </div>
   );

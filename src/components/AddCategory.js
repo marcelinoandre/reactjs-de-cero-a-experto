@@ -6,7 +6,7 @@ const AddCategory = ({ setCategores }) => {
   const handleAdd = e => {
     e.preventDefault();
     if (!category) return console.log('vazio');
-    setCategores(categores => [...categores, category]);
+    setCategores(categores => [category, ...categores]);
     setCategory('');
   };
 

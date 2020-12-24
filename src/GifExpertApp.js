@@ -3,7 +3,7 @@ import AddCategory from './components/AddCategory';
 import ItemsCategory from './components/ItemsCategory';
 
 const GifExpertApp = () => {
-  const [categories, setCategores] = useState(['One Punch']);
+  const [category, setCategores] = useState('One Punch');
 
   return (
     <>
@@ -11,7 +11,7 @@ const GifExpertApp = () => {
       <AddCategory setCategores={setCategores} />
       <hr />
 
-      <ItemsCategory categories={categories} />
+      <ItemsCategory category={category} />
     </>
   );
 };
