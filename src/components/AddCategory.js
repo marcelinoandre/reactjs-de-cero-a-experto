@@ -1,26 +1,36 @@
-import { useState } from 'react';
+import React, { useState } from 'react'
+import PropTypes from 'prop-types';
 
-const AddCategory = ({ setCategores }) => {
-  const [category, setCategory] = useState('');
+export const AddCategory = ({ setCategories }) => {
 
-  const handleAdd = e => {
-    e.preventDefault();
-    if (!category) return console.log('vazio');
-    setCategores(categores => [category, ...categores]);
-    setCategory('');
-  };
+    const [inputValue, setInputValue] = useState(''); // ''
 
-  return (
-    <form onSubmit={handleAdd}>
-      <input
-        name="category"
-        type="text"
-        value={category}
-        onChange={e => setCategory(e.target.value)}
-      />
-      <button>Add</button>
-    </form>
-  );
-};
+    const handleInputChange = ( e ) => {
+        setInputValue( e.target.value );
+    }
 
-export default AddCategory;
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if ( inputValue.trim().length > 2 ) {
+            setCategories( cats => [ inputValue, ...cats, ] );
+            setInputValue('');
+        }
+
+    }
+
+    return (
+        <form onSubmit={ handleSubmit }>
+            <input 
+                type="text"
+                value={ inputValue }
+                onChange={ handleInputChange }
+            />
+        </form>
+    )
+}
+
+
+AddCategory.propTypes = {
+    setCategories: PropTypes.func.isRequired
+}

@@ -1,21 +1,25 @@
-*{
-  font-family:  Helvetica, sans-serif, Arial;
+* {
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-body{
-  padding: 30px;
+body {
+  padding: 60px;
 }
+
+
 input {
   color: grey;
   font-size: 1.2rem;
   width: 100%;
 }
-.card-grid{
+
+.card-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.card{
+
+.card {
   align-content: center;
   border: 1px solid grey;
   border-radius: 6px;
@@ -24,10 +28,12 @@ input {
   overflow: hidden;
 }
 
-.card p{
+.card p {
   padding: 5px;
   text-align: center;
 }
-.card img{
+
+.card img {
   max-height: 170px;
 }
+
